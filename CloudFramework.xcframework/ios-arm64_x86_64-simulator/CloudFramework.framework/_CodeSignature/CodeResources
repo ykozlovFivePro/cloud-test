@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		3qpfalCtvVuq5t6G67jUsrVB03s=
+		QBEGHmDxj6CveKD0f26wSu5igtQ=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		izDt7vC25BUwR4ocJtFO5zihy7s=
+		LqdFiclHuip0WH0ErZjHdQyKHYg=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		e9G/Jd3npJFrEVkcZwF17Ha2iyo=
+		uhqkchKvKZh5BhjYSHFCZt5ut9M=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e9G/Jd3npJFrEVkcZwF17Ha2iyo=
+		uhqkchKvKZh5BhjYSHFCZt5ut9M=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zeGj0vCy0yX8lgAJp2CC3qlgGg4=
+		iUY4cZk36tCESEOx9eeXwZokSLQ=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		izDt7vC25BUwR4ocJtFO5zihy7s=
+		LqdFiclHuip0WH0ErZjHdQyKHYg=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dlZaTH7RX12GgU46cP9MLl/YbJc=
+		TI1IJhyqu7cl41k5IYIlb7z/qy0=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dlZaTH7RX12GgU46cP9MLl/YbJc=
+		TI1IJhyqu7cl41k5IYIlb7z/qy0=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BGJIS3HtFm2G8CiUG9Yvpa3vU9c=
+		m4IpFGszK9muTkFcQ2NimVk7KzE=
 		</data>
 		<key>ci_post_clone.sh</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
-		nkRV/K0qjotCCE7PtmyE1mL/xu8=
+		0AaOicy17aizKiVHHBIjlxblkYQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q75kV6LaAvx089Of2d4XIAECwShFoQT0vKLb2/PlC8g=
+			bETEHvnWZJsLJiLducFEfSBTZ7oG91Zvf18tBooBLOg=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cutcm448/d0AvHw9jfzmxrDUcVQIa99tcif0rRBZfSA=
+			u3clEoLuORL1tAgWrp8pYvtzcoRNrrzsZeegkRceh2A=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -84,28 +84,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cutcm448/d0AvHw9jfzmxrDUcVQIa99tcif0rRBZfSA=
+			u3clEoLuORL1tAgWrp8pYvtzcoRNrrzsZeegkRceh2A=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F3P0CRZC8yMFRcjsVo4CFJsSLc2Es0/pYPOE8ar8kPA=
+			UFFgcC5V+AFnKha6QXtr75+1IgdTyLdZNWxaLScnyZo=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q75kV6LaAvx089Of2d4XIAECwShFoQT0vKLb2/PlC8g=
+			bETEHvnWZJsLJiLducFEfSBTZ7oG91Zvf18tBooBLOg=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BCjJeF+PVzgTjgUHlJNaPiDJHfTrBejrWLV6JLE+yTg=
+			p+jIU2a3vZw3vZaAigFQMhEl/xFfszNK1LJfIi3AEGI=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BCjJeF+PVzgTjgUHlJNaPiDJHfTrBejrWLV6JLE+yTg=
+			p+jIU2a3vZw3vZaAigFQMhEl/xFfszNK1LJfIi3AEGI=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ue8d74Zxd1Fq+Cce7T/1c2T5vLt6b/Lfi9jlcImSBKY=
+			vyXJAxxhV6r1NNt81bfpr2m+nva6lq79sYVPopXTV00=
 			</data>
 		</dict>
 		<key>ci_post_clone.sh</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z8a8d79f+eszZFgoyeCkTaUZtmuBuP50qaoa14CCmj0=
+			Gy+g/oVlItCLr+g9DAYmeeb70j743LnEUfbovJPzZWQ=
 			</data>
 		</dict>
 	</dict>

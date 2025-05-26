@@ -32,9 +32,10 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14CloudFramework0aB3IOSC6sharedACvp",
-            "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvp",
+            "usr": "s:14CloudFramework0aB3IOSC6sharedACvpZ",
+            "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvpZ",
             "moduleName": "CloudFramework",
+            "static": true,
             "declAttributes": [
               "HasInitialValue",
               "Final",
@@ -57,9 +58,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14CloudFramework0aB3IOSC6sharedACvg",
-                "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvg",
+                "usr": "s:14CloudFramework0aB3IOSC6sharedACvgZ",
+                "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvgZ",
                 "moduleName": "CloudFramework",
+                "static": true,
                 "implicit": true,
                 "declAttributes": [
                   "Final"
@@ -87,6 +89,27 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CloudFrameworkIOS",
+                "printedName": "CloudFramework.CloudFrameworkIOS",
+                "usr": "s:14CloudFramework0aB3IOSC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14CloudFramework0aB3IOSCACycfc",
+            "mangledName": "$s14CloudFramework0aB3IOSCACycfc",
+            "moduleName": "CloudFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -96,7 +119,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",

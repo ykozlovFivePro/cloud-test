@@ -147,3 +147,44 @@ git tag "$CI_TAG" || echo "⚠️ Tag already exists locally"
 git push origin "$CI_TAG" || echo "⚠️ Tag already exists remotely"
 
 echo "✅ Done. $FRAMEWORK_NAME.xcframework pushed and tagged as $CI_TAG"
+
+# ────────────── 🚀 Create GitHub Release ──────────────
+
+echo "📦 Creating GitHub release for tag $CI_TAG..."
+
+REPO_API="https://api.github.com/repos/${GITHUB_USERNAME}/${PUBLIC_REPO_NAME}"
+RELEASE_DATA=$(cat <<EOF
+{
+  "tag_name": "$CI_TAG",
+  "target_commitish": "$DEST_BRANCH",
+  "name": "$CI_TAG",
+  "body": "Release of CloudFramework $CI_TAG",
+  "draft": false,
+  "prerelease": false
+}
+EOF
+)
+
+RESPONSE=$(curl -sSL -X POST "$REPO_API/releases" \
+  -H "Authorization: token ${GITHUB_TOKEN}" \
+  -H "Accept: application/vnd.github+json" \
+  -d "$RELEASE_DATA")
+
+UPLOAD_URL=$(echo "$RESPONSE" | grep upload_url | cut -d '"' -f 4 | cut -d '{' -f 1)
+
+if [ -z "$UPLOAD_URL" ]; then
+  echo "⚠️ Failed to create GitHub release. Response:"
+  echo "$RESPONSE"
+  exit 1
+fi
+
+echo "✅ GitHub release created: $CI_TAG"
+
+echo "📤 Uploading asset to release..."
+
+curl -sSL -X POST "$UPLOAD_URL?name=CloudFramework.xcframework.zip" \
+  -H "Authorization: token ${GITHUB_TOKEN}" \
+  -H "Content-Type: application/zip" \
+  --data-binary @"../build/CloudFramework.xcframework.zip"
+
+echo "✅ Asset uploaded to release"
