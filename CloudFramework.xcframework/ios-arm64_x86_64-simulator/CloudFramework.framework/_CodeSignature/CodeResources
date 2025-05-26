@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		CkyVx1lHWL6goRTbpqjm6sov128=
+		3qpfalCtvVuq5t6G67jUsrVB03s=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iVh4+x+wDwTJuPiZsMCvRPQK/+U=
+		izDt7vC25BUwR4ocJtFO5zihy7s=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vsP+NTaRnDc45MnzjkW03EQy6k4=
+		e9G/Jd3npJFrEVkcZwF17Ha2iyo=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vsP+NTaRnDc45MnzjkW03EQy6k4=
+		e9G/Jd3npJFrEVkcZwF17Ha2iyo=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9orWaKaDlUgaiM7Vq1wKN0VEfDM=
+		zeGj0vCy0yX8lgAJp2CC3qlgGg4=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iVh4+x+wDwTJuPiZsMCvRPQK/+U=
+		izDt7vC25BUwR4ocJtFO5zihy7s=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aqlOs4/L+lx0Xbty+IOdCVyalSY=
+		dlZaTH7RX12GgU46cP9MLl/YbJc=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aqlOs4/L+lx0Xbty+IOdCVyalSY=
+		dlZaTH7RX12GgU46cP9MLl/YbJc=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Im5kNDu203gnfH4KlMltjDXwJpQ=
+		BGJIS3HtFm2G8CiUG9Yvpa3vU9c=
 		</data>
 		<key>ci_post_clone.sh</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6/CS8RiVwJM+BjbeI+URxkjtcGVuarM0k4cYI9GT7E=
+			Q75kV6LaAvx089Of2d4XIAECwShFoQT0vKLb2/PlC8g=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wP8u4LWC7Z0L/cbyQFQH36QGStVN6abIUfkg4CcqCDM=
+			cutcm448/d0AvHw9jfzmxrDUcVQIa99tcif0rRBZfSA=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -84,28 +84,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wP8u4LWC7Z0L/cbyQFQH36QGStVN6abIUfkg4CcqCDM=
+			cutcm448/d0AvHw9jfzmxrDUcVQIa99tcif0rRBZfSA=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOxCUuMxmaqdEDfeQ7fZruf0/D9dt7hWh8aq6NVbxLg=
+			F3P0CRZC8yMFRcjsVo4CFJsSLc2Es0/pYPOE8ar8kPA=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6/CS8RiVwJM+BjbeI+URxkjtcGVuarM0k4cYI9GT7E=
+			Q75kV6LaAvx089Of2d4XIAECwShFoQT0vKLb2/PlC8g=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJbd1zax/MsVUaOkH5Pxng50XkC8FqFM6VhP0kxwS1w=
+			BCjJeF+PVzgTjgUHlJNaPiDJHfTrBejrWLV6JLE+yTg=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJbd1zax/MsVUaOkH5Pxng50XkC8FqFM6VhP0kxwS1w=
+			BCjJeF+PVzgTjgUHlJNaPiDJHfTrBejrWLV6JLE+yTg=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7E2bSO9ec3/f9obOgSAVLXS2Rt9M4fT6Crf3v7Yi+sQ=
+			ue8d74Zxd1Fq+Cce7T/1c2T5vLt6b/Lfi9jlcImSBKY=
 			</data>
 		</dict>
 		<key>ci_post_clone.sh</key>

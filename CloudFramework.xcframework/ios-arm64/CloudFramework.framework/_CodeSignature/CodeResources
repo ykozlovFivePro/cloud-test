@@ -6,15 +6,15 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		5R7BJc3Rc7Viuw5dpZr0Od8i+eQ=
+		fALKWL64bwnGArSOJlFM6yX2IfY=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		iVh4+x+wDwTJuPiZsMCvRPQK/+U=
+		izDt7vC25BUwR4ocJtFO5zihy7s=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		SIvCJrtlcs+bAALlzQuS4CqzXi8=
+		g0EqIt2LhZ94eSTgI7omQS9Yyf0=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		SIvCJrtlcs+bAALlzQuS4CqzXi8=
+		g0EqIt2LhZ94eSTgI7omQS9Yyf0=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gsgKYZiW7NbSYAxCqsn6HJAoF3M=
+		mkWO9RRey5DZP8CfVStzw2GTfrs=
 		</data>
 		<key>ci_post_clone.sh</key>
 		<data>
@@ -43,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6/CS8RiVwJM+BjbeI+URxkjtcGVuarM0k4cYI9GT7E=
+			Q75kV6LaAvx089Of2d4XIAECwShFoQT0vKLb2/PlC8g=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XyRb3HSvlG0Whzs51HmT2EuDUWA2MrOiSSY/xz9oAx0=
+			k8oXLgc23fFKkAenBZ75ZNETSkJVjaCYEhEQYAvozKo=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -64,14 +64,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XyRb3HSvlG0Whzs51HmT2EuDUWA2MrOiSSY/xz9oAx0=
+			k8oXLgc23fFKkAenBZ75ZNETSkJVjaCYEhEQYAvozKo=
 			</data>
 		</dict>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LagbPFQ5MdG8VIX66+QPvSSeaWwtwiNQA7ZrOE0t+SI=
+			2PqsaC63UpPjWwi7GM+3i/6K4XV4S7GiQ0d0NmFhHkc=
 			</data>
 		</dict>
 		<key>ci_post_clone.sh</key>

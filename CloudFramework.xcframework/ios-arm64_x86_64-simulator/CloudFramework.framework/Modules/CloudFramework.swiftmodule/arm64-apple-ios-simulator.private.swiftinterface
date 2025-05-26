@@ -7,7 +7,8 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class CloudFramework {
+@_hasMissingDesignatedInitializers public class CloudFrameworkIOS {
+  final public let shared: CloudFramework.CloudFrameworkIOS
   public func sayHello()
   @objc deinit
 }

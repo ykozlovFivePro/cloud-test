@@ -16,9 +16,58 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CloudFramework",
-        "printedName": "CloudFramework",
+        "name": "CloudFrameworkIOS",
+        "printedName": "CloudFrameworkIOS",
         "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CloudFrameworkIOS",
+                "printedName": "CloudFramework.CloudFrameworkIOS",
+                "usr": "s:14CloudFramework0aB3IOSC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14CloudFramework0aB3IOSC6sharedACvp",
+            "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvp",
+            "moduleName": "CloudFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CloudFrameworkIOS",
+                    "printedName": "CloudFramework.CloudFrameworkIOS",
+                    "usr": "s:14CloudFramework0aB3IOSC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14CloudFramework0aB3IOSC6sharedACvg",
+                "mangledName": "$s14CloudFramework0aB3IOSC6sharedACvg",
+                "moduleName": "CloudFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Function",
             "name": "sayHello",
@@ -31,8 +80,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14CloudFrameworkAAC8sayHelloyyF",
-            "mangledName": "$s14CloudFrameworkAAC8sayHelloyyF",
+            "usr": "s:14CloudFramework0aB3IOSC8sayHelloyyF",
+            "mangledName": "$s14CloudFramework0aB3IOSC8sayHelloyyF",
             "moduleName": "CloudFramework",
             "declAttributes": [
               "AccessControl"
@@ -41,8 +90,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:14CloudFrameworkAAC",
-        "mangledName": "$s14CloudFrameworkAAC",
+        "usr": "s:14CloudFramework0aB3IOSC",
+        "mangledName": "$s14CloudFramework0aB3IOSC",
         "moduleName": "CloudFramework",
         "declAttributes": [
           "AccessControl"
