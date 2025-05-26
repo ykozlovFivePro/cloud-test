@@ -181,9 +181,10 @@ fi
 echo "✅ GitHub release created: $CI_TAG"
 
 echo "🗜️ Zipping XCFramework for GitHub asset upload..."
-cd build
+
+cd "$PROJECT_PATH/build"
 zip -r -X CloudFramework.xcframework.zip CloudFramework.xcframework
-cd ..
+cd "$PROJECT_PATH"
 
 echo "📤 Uploading asset to release..."
 
@@ -193,3 +194,4 @@ curl -sSL -X POST "$UPLOAD_URL?name=CloudFramework.xcframework.zip" \
   --data-binary @"build/CloudFramework.xcframework.zip"
 
 echo "✅ Asset uploaded to release"
+
