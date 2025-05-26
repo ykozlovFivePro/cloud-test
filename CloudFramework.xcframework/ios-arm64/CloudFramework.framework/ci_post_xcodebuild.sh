@@ -143,8 +143,16 @@ git push origin "$DEST_BRANCH"
 # ────────────── 🏷️ Tag Push ──────────────
 
 echo "🏷️ Pushing tag: $CI_TAG"
-git tag "$CI_TAG" || echo "⚠️ Tag already exists locally"
-git push origin "$CI_TAG" || echo "⚠️ Tag already exists remotely"
+# 🏷️ Safely re-create tag
+if git rev-parse "$CI_TAG" >/dev/null 2>&1; then
+  echo "⚠️ Local tag '$CI_TAG' already exists. Deleting it..."
+  git tag -d "$CI_TAG"
+fi
+
+echo "🏷️ Creating and pushing tag '$CI_TAG'..."
+git tag "$CI_TAG"
+git push origin "$CI_TAG"
+
 
 echo "✅ Done. $FRAMEWORK_NAME.xcframework pushed and tagged as $CI_TAG"
 
