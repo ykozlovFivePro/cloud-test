@@ -160,8 +160,10 @@ echo "✅ Done. $FRAMEWORK_NAME.xcframework pushed and tagged as $CI_TAG"
 echo "📦 Creating GitHub release for tag $CI_TAG..."
 
 IS_PRERELEASE=false
-if echo "$CI_TAG" | grep -q "beta"; then
+RELEASE_BODY="Release of CloudFramework $CI_TAG"
+if echo "$CI_TAG" | grep -qi "beta"; then
   IS_PRERELEASE=true
+  RELEASE_BODY="Pre-release of CloudFramework $CI_TAG (beta)"
   echo "📦 Detected beta tag. Marking release as prerelease."
 fi
 
@@ -171,7 +173,7 @@ RELEASE_DATA=$(cat <<EOF
   "tag_name": "$CI_TAG",
   "target_commitish": "$DEST_BRANCH",
   "name": "$CI_TAG",
-  "body": "Release of CloudFramework $CI_TAG",
+  "body": "$RELEASE_BODY",
   "draft": false,
   "prerelease": $IS_PRERELEASE
 }

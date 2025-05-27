@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		FfXNnhhI7OyL58z2Rry/Gu/9kHQ=
+		bSiJdaVdouF0vC34rwYQ2k46SHo=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
-		Ep54FLR6JKg1vliwCzosbxNX6H8=
+		dzjZ5+EfAY1mkBqu/JrYo1bG4p8=
 		</data>
 		<key>ci_utils.sh</key>
 		<data>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+h2/hqAkpH4TU4BNqgFNOYPEPUW4OeKLOgM1NzDuxI=
+			95rw95b6FUmWV1LsnYaU+1esXbMsl3JUE69h4yQ46/M=
 			</data>
 		</dict>
 		<key>ci_utils.sh</key>
