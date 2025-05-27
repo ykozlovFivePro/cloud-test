@@ -22,17 +22,22 @@ validate_inputs() {
 }
 
 build_simulator_framework() {
-  echo "📦 Building iOS Simulator archive..."
-  cd "$PROJECT_PATH"
-  xcodebuild archive     -scheme "$SCHEME_NAME"     -destination "generic/platform=iOS Simulator"     -archivePath "$SIMULATOR_ARCHIVE_PATH"     SKIP_INSTALL=NO     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
-  cd - >/dev/null
+echo "📦 Building iOS Simulator archive..."
+cd "$PROJECT_PATH"
 
-  SIMULATOR_FRAMEWORK_PATH="$SIMULATOR_ARCHIVE_PATH/Products/Library/Frameworks/$FRAMEWORK_NAME.framework"
-  if [ ! -d "$SIMULATOR_FRAMEWORK_PATH" ]; then
-    echo "❌ Simulator framework not found at $SIMULATOR_FRAMEWORK_PATH"
-    exit 1
-  fi
-  echo "✅ Built iOS Simulator framework"
+xcodebuild archive \
+  -scheme "$SCHEME_NAME" \
+  -destination "generic/platform=iOS Simulator" \
+  -archivePath "$SIMULATOR_ARCHIVE_PATH" \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
+SIMULATOR_FRAMEWORK_PATH="$SIMULATOR_ARCHIVE_PATH/Products/Library/Frameworks/$FRAMEWORK_NAME.framework"
+if [ ! -d "$SIMULATOR_FRAMEWORK_PATH" ]; then
+  echo "❌ Simulator framework not found at $SIMULATOR_FRAMEWORK_PATH"
+  exit 1
+fi
+echo "✅ Built iOS Simulator framework"
 }
 
 create_xcframework() {
@@ -113,20 +118,33 @@ commit_and_tag_push() {
 
 create_github_release() {
   echo "📦 Creating GitHub release for tag $CI_TAG..."
+
+  # Detect if this is a prerelease
+  IS_PRERELEASE=false
+  RELEASE_BODY="Release of ${FRAMEWORK_NAME} ${CI_TAG}"
+  if echo "$CI_TAG" | grep -qi "beta"; then
+    IS_PRERELEASE=true
+    RELEASE_BODY="Pre-release of ${FRAMEWORK_NAME} ${CI_TAG} (beta)"
+    echo "📦 Detected beta tag. Marking release as prerelease."
+  fi
+
   REPO_API="https://api.github.com/repos/${GITHUB_USER}/${PUBLIC_REPO_NAME}"
   RELEASE_DATA=$(cat <<EOF
 {
   "tag_name": "$CI_TAG",
   "target_commitish": "$DEST_BRANCH",
   "name": "$CI_TAG",
-  "body": "Release of CloudFramework $CI_TAG",
+  "body": "$RELEASE_BODY",
   "draft": false,
-  "prerelease": false
+  "prerelease": $IS_PRERELEASE
 }
 EOF
 )
 
-  RESPONSE=$(curl -sSL -X POST "$REPO_API/releases"     -H "Authorization: token ${GITHUB_TOKEN}"     -H "Accept: application/vnd.github+json"     -d "$RELEASE_DATA")
+  RESPONSE=$(curl -sSL -X POST "$REPO_API/releases" \
+    -H "Authorization: token ${GITHUB_TOKEN}" \
+    -H "Accept: application/vnd.github+json" \
+    -d "$RELEASE_DATA")
 
   UPLOAD_URL=$(echo "$RESPONSE" | grep upload_url | cut -d '"' -f 4 | cut -d '{' -f 1)
   if [ -z "$UPLOAD_URL" ]; then
@@ -135,13 +153,20 @@ EOF
     exit 1
   fi
 
-  echo "🗜️ Zipping XCFramework for GitHub asset upload..."
+  echo "🗜️ Zipping XCFramework and Package.swift for GitHub asset upload..."
+
+  # Copy Package.swift into build directory for zipping
+  cp "$PROJECT_PATH/$PUBLIC_REPO_DIR/Package.swift" "$PROJECT_PATH/build/Package.swift"
+
   cd "$PROJECT_PATH/build"
-  zip -r -X "${FRAMEWORK_NAME}.xcframework.zip" "${FRAMEWORK_NAME}.xcframework"
+  zip -r -X "${FRAMEWORK_NAME}.xcframework.zip" "${FRAMEWORK_NAME}.xcframework" Package.swift
   cd - >/dev/null
 
   echo "📤 Uploading asset to release..."
-  curl -sSL -X POST "$UPLOAD_URL?name=${FRAMEWORK_NAME}.xcframework.zip"     -H "Authorization: token ${GITHUB_TOKEN}"     -H "Content-Type: application/zip"     --data-binary @"$PROJECT_PATH/build/${FRAMEWORK_NAME}.xcframework.zip"
+  curl -sSL -X POST "$UPLOAD_URL?name=${FRAMEWORK_NAME}.xcframework.zip" \
+    -H "Authorization: token ${GITHUB_TOKEN}" \
+    -H "Content-Type: application/zip" \
+    --data-binary @"$PROJECT_PATH/build/${FRAMEWORK_NAME}.xcframework.zip"
 
   echo "✅ Asset uploaded to release"
 }
