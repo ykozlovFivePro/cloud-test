@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		z1fksDPXBdBHK+2aUXHZFteuUe4=
+		fiOzQfjjDG19+HTBWIKVz/f52nQ=
 		</data>
 		<key>Modules/CloudFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -48,13 +48,21 @@
 		<data>
 		m4IpFGszK9muTkFcQ2NimVk7KzE=
 		</data>
+		<key>ci_config.sh</key>
+		<data>
+		6r2kr0Gtsx7SzDFYll/ilNQoJ/Q=
+		</data>
 		<key>ci_post_clone.sh</key>
 		<data>
-		nV7n1WnQqebSU+M2DUpzI512NdQ=
+		uoHdJ0CCUBJU/rffK4uDSvtS4Lw=
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
 		dYudibUH5qGOEGwGE4mcnkj20yk=
+		</data>
+		<key>ci_utils.sh</key>
+		<data>
+		fCtvmoJFicgcEvsDHTWAIRd0RDI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -129,11 +137,18 @@
 			vyXJAxxhV6r1NNt81bfpr2m+nva6lq79sYVPopXTV00=
 			</data>
 		</dict>
+		<key>ci_config.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bILsoYv7kz97s0sjlI5XTOI1WaPDNpLB7mn6Ie8aI8M=
+			</data>
+		</dict>
 		<key>ci_post_clone.sh</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MHcn3aULt/sgYnlbBP8yHK4rqcpK2iv9Hg2HB39msMU=
+			/JjvVlx4seGuB8rR+XOm6cIb0q2IEcmphWCs21RJgfs=
 			</data>
 		</dict>
 		<key>ci_post_xcodebuild.sh</key>
@@ -141,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			1gC5m0yOddOegc9B/mQnklGmHB2V/W1HGnPIeY/CWi4=
+			</data>
+		</dict>
+		<key>ci_utils.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qjFKyxWpeVuZ0QogEjCi58ofuuhoD9uF10vnMFqp3po=
 			</data>
 		</dict>
 	</dict>
